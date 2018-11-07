@@ -5,8 +5,9 @@
     <h2>Reviews</h2>
     <ul class="list-group">
       <% @reviews.each do |review| %>
-      <li class="list-group-item">
-        <p><%= review.content %> - <strong>Rating: <%= review.rating %></strong></p>
+      <li class="list-group-item text-justify">
+        <p><%= review.content %></p>
+        <p>Rating: <strong><%= review.rating %></strong></p>
       </li>
       <% end %>
     </ul>
